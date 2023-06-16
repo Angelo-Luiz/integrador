@@ -6,7 +6,7 @@ class Postgres {
     private $port;
     private $user;
 
-    public function __construct($usuario, $senha)
+    public function __construct($usuario, $senha) 
     {
         $this->dbname = 'marina';
         $this->host = 'localhost';
