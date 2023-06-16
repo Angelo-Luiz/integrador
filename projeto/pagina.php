@@ -22,7 +22,7 @@
         echo "deu pau";
     }
     foreach($result as $row){
-        echo $row['bid'] . "</br>";
+        echo $row['sid'] . "</br>";
     }
     echo "<h1>teste</h1>";
     
