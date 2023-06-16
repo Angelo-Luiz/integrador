@@ -1,4 +1,4 @@
-<?php 
+<?php   
 class Postgres {
     private $dbname;
     private $host;
