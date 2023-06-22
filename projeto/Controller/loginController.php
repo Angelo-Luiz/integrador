@@ -23,7 +23,8 @@ if(!$consulta){
     session_start();
     $_SESSION['id_usuario'] = $consulta[0]['id'];;
     $postgres->desconectar();
-    header('Location: ../View/Home.php?login=success');
+//    echo $_SESSION['id_usuario'];
+    header('Location: ../View/home.php?login=success');
 }
 
 

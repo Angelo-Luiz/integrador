@@ -28,6 +28,8 @@
                         echo "<span style='color: red;'>Falha na conexão com o banco.</span>";
                     }else if($erro == 2){
                         echo "<span style='color: red;'>Login ou senha inválidos.</span>";
+                    }else if($erro == 3){
+                        echo "<span style='color: red;'>Sessão encerrada, efetue o login novamente.</span>";
                     }
                 ?>
                 <button type="submit" class="btn btn-primary btn-block">Entrar</button>
