@@ -112,7 +112,7 @@ class Aluno{
      */
     public function setFrequencia($frequencia)
     {
-        $this->frequencia.append($frequencia);
+        array_push($this->frequencia, $frequencia);
     }
 
     /**
