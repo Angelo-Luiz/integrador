@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Universidades</title>
+    <?php
+    session_start();
+    if(!$_SESSION['id_usuario'] || $_SESSION['id_usuario'] == ''){
+        header('Location: login.php?erro=3');
+    }
+    $statusCadastro = $_GET['cadastro'];
+    ?>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            background-color: #D3D3D3;
+        }
+    </style>
+
+</head>
+<body>
+
+<?php
+include_once 'topo.php';
+
+if($statusCadastro == 'success'){
+    echo "<script>alert('Universidade cadastrado com sucesso')</script>";
+}else if($statusCadastro == 'error'){
+    echo "<script>alert('Erro ao inserir registro.')</script>";
+}
+?>
+
+<section class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            Cadastro de Universidades
+        </div>
+        <div class="card-body">
+            <form method="post" action="../Controller/cadastroAlunoController.php" id="form">
+                <div class="form-group">
+                    <label for="nome">Nome da Universidade:</label>
+                    <input type="text" class="form-control nome" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Cidade:</label>
+                    <input type="email" class="form-control email" id="email" name="email" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="cpf">Sigla:</label>
+                    <input type="number" class="form-control cpf" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                </div>
+                    <button type="submit" class="btn btn-primary botao">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="../JS/CadastroAluno.js"></script>
+</body>
+</html>
+
+

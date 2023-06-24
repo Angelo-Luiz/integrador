@@ -10,6 +10,7 @@
     if(!$_SESSION['id_usuario'] || $_SESSION['id_usuario'] == ''){
         header('Location: login.php?erro=3');
     }
+    $statusCadastro = $_GET['cadastro'];
     $uni = new UniversidadeDAO();
     $consulta = $uni->readUniversidade("select * from universidades");
 
@@ -21,11 +22,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+    <style>
+        body{
+            background-color: #D3D3D3;
+        }
+    </style>
+
 </head>
 <body>
 
 <?php
 include_once 'topo.php';
+
+if($statusCadastro == 'success'){
+    echo "<script>alert('Aluno cadastrado com sucesso')</script>";
+}else if($statusCadastro == 'error'){
+    echo "<script>alert('Erro ao inserir registro.')</script>";
+}
 ?>
 
 <section class="container mt-5">
@@ -56,7 +69,7 @@ include_once 'topo.php';
                     <input type="date" class="form-control data" id="data" name="data" placeholder="Digite sua data de nascimento">
                 </div>
                 <div class="form-group">
-                    <label for="universidade">Universidade</label>
+                    <label for="universidade">Universidade:</label>
                     <select class="form-control universidade" id="universidade" name="universidade">
                         <option value="">Selecione sua Universidade</option>
                         <?php

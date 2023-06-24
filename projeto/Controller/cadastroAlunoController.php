@@ -16,4 +16,4 @@ $aluno->setTelefone(addslashes($_POST['telefone']));
 $aluno->setDataNasc(addslashes($_POST['data']));
 $aluno->setUniversidade($_POST['universidade']);
 
-echo $aluno->createAluno();
+$aluno->createAluno();
