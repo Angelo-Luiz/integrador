@@ -8,7 +8,7 @@ class UniversidadeDAO extends Universidade{
     }
 
 
-    public function readUniversidade($query){
+    public function readUniversidade($query = "select * from universidades"){
         $postgres = new Postgres('angelo', 'angelo', 'integrador');
         $postgres->criaConexao();
         $consulta = $postgres->getConexao()->query($query);

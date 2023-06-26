@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de Universidades</title>
     <?php
+    include_once '../DAO/CidadeDAO.php';
     session_start();
     if(!$_SESSION['id_usuario'] || $_SESSION['id_usuario'] == ''){
         header('Location: login.php?erro=3');
     }
     $statusCadastro = $_GET['cadastro'];
+    $cidades = new CidadeDAO();
+    $consulta = $cidades->readCidade();
     ?>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -46,15 +49,25 @@ if($statusCadastro == 'success'){
             <form method="post" action="../Controller/cadastroAlunoController.php" id="form">
                 <div class="form-group">
                     <label for="nome">Nome da Universidade:</label>
-                    <input type="text" class="form-control nome" id="nome" name="nome" placeholder="Digite seu nome">
+                    <input type="text" class="form-control nome" id="nome" name="nome" placeholder="Nome da universidade">
                 </div>
                 <div class="form-group">
-                    <label for="email">Cidade:</label>
-                    <input type="email" class="form-control email" id="email" name="email" placeholder="Digite seu email">
+                    <label for="universidade">Cidade:</label>
+                    <select class="form-control universidade" id="cidade" name="cidade">
+                        <option value="">Selecione sua Cidade</option>
+                        <?php
+                        foreach ($consulta as $row){
+                            echo "<option value='".  $row['id']. "'>". $row['nome']. " - ". $row['uf'] ."</option>";
+                        }
+
+                        ?>
+
+                    </select>
+
                 </div>
                 <div class="form-group">
                     <label for="cpf">Sigla:</label>
-                    <input type="number" class="form-control cpf" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                    <input type="number" class="form-control sigla" id="sigla" name="sigla" placeholder="Sigla da Universidade">
                 </div>
                     <button type="submit" class="btn btn-primary botao">Enviar</button>
             </form>
@@ -62,7 +75,7 @@ if($statusCadastro == 'success'){
     </div>
 </section>
 
-<script src="../JS/CadastroAluno.js"></script>
+<script src="../JS/CadastroUniversidade.js"></script>
 </body>
 </html>
 

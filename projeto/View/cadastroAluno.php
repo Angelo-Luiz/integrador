@@ -12,7 +12,7 @@
     }
     $statusCadastro = $_GET['cadastro'];
     $uni = new UniversidadeDAO();
-    $consulta = $uni->readUniversidade("select * from universidades");
+    $consulta = $uni->readUniversidade();
 
     ?>
 

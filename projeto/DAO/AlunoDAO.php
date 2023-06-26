@@ -35,8 +35,8 @@ class AlunoDAO extends Aluno{
                 header('Location: ../View/cadastroAluno.php?cadastro=error');
             }
 
-        }catch (Exception $e){
-            return $e->getMessage();
+        }catch (PDOException $e){
+            echo $e->getMessage();
         }
     }
     public function readAluno(){

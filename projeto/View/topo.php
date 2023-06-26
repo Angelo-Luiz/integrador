@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="home.php">LimaFranz</a>
+    <a class="navbar-brand" href="home.php">Integrador</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,6 +12,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="cadastroAluno.php">Cadastro de Alunos</a>
                     <a class="dropdown-item" href="cadastroUniversidade.php">Cadastro de Universidades</a>
+                    <a class="dropdown-item" href="cadastroCidade.php">Cadastro de Cidades</a>
                     <a class="dropdown-item" href="#">Cadastro de Veículos</a>
                 </div>
             </li>
