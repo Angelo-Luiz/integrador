@@ -28,6 +28,7 @@ class CadastroUniversidade{
     validaCampos(){
 
         let valid = true;
+        document.querySelectorAll('.error-cadastro-aluno').forEach(e => e.remove());
         for(let campo of document.querySelectorAll('.form-control')){
 
             let label = campo.previousElementSibling.innerText;
@@ -44,8 +45,10 @@ class CadastroUniversidade{
                 }
             }
             else if(campo.classList.contains('cidade')){
-                if(campo.value === '' || typeof campo.value !== 'number'){
+                console.log('toaqui')
+                if(campo.value === 0 || campo.value === ''){
                     valid = false;
+                    console.log('toaqui')
                     this.criaErro(campo, `Preencha o campo ${label.substring(0, label.length - 1)} com um valor válido.`);
                 }
             }

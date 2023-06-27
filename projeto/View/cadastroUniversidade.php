@@ -46,14 +46,14 @@ if($statusCadastro == 'success'){
             Cadastro de Universidades
         </div>
         <div class="card-body">
-            <form method="post" action="../Controller/cadastroAlunoController.php" id="form">
+            <form method="post" action="../Controller/cadastroUniversidadeController.php" id="form">
                 <div class="form-group">
                     <label for="nome">Nome da Universidade:</label>
                     <input type="text" class="form-control nome" id="nome" name="nome" placeholder="Nome da universidade">
                 </div>
                 <div class="form-group">
-                    <label for="universidade">Cidade:</label>
-                    <select class="form-control universidade" id="cidade" name="cidade">
+                    <label for="cidade">Cidade:</label>
+                    <select class="form-control cidade" id="cidade" name="cidade">
                         <option value="">Selecione sua Cidade</option>
                         <?php
                         foreach ($consulta as $row){
@@ -67,7 +67,7 @@ if($statusCadastro == 'success'){
                 </div>
                 <div class="form-group">
                     <label for="cpf">Sigla:</label>
-                    <input type="number" class="form-control sigla" id="sigla" name="sigla" placeholder="Sigla da Universidade">
+                    <input type="text" class="form-control sigla" id="sigla" name="sigla" placeholder="Sigla da Universidade">
                 </div>
                     <button type="submit" class="btn btn-primary botao">Enviar</button>
             </form>

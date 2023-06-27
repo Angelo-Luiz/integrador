@@ -21,7 +21,7 @@ if(!$consulta){
     header('Location: ../View/login.php?erro=2');
 } else{
     session_start();
-    $_SESSION['id_usuario'] = $consulta[0]['id'];;
+    $_SESSION['id_usuario'] = $consulta[0]['id'];
     $postgres->desconectar();
 //    echo $_SESSION['id_usuario'];
     header('Location: ../View/home.php?login=success');

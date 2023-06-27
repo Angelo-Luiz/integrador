@@ -13,7 +13,7 @@
                     <a class="dropdown-item" href="cadastroAluno.php">Cadastro de Alunos</a>
                     <a class="dropdown-item" href="cadastroUniversidade.php">Cadastro de Universidades</a>
                     <a class="dropdown-item" href="cadastroCidade.php">Cadastro de Cidades</a>
-                    <a class="dropdown-item" href="#">Cadastro de Veículos</a>
+                    <a class="dropdown-item" href="cadastroUsuario.php">Cadastro de Usuarios</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

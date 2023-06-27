@@ -30,8 +30,10 @@ class AlunoDAO extends Aluno{
             $insert = $postgres->getConexao()->prepare($query);
 
             if($insert->execute()){
+                $postgres->desconectar();
                 header('Location: ../View/cadastroAluno.php?cadastro=success');
             }else{
+                $postgres->desconectar();
                 header('Location: ../View/cadastroAluno.php?cadastro=error');
             }
 

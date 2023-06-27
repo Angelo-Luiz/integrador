@@ -17,8 +17,10 @@ class CidadeDAO extends Cidade{
 
             $insert = $postgres->getConexao()->prepare($query);
             if($insert->execute()){
+                $postgres->desconectar();
                 header('location: ../View/cadastroCidade.php?cadastro=success');
             }else{
+                $postgres->desconectar();
                 header('location: ../View/cadastroCidade.php?cadastro=error');
             }
         }catch(PDOException $e){
@@ -31,6 +33,7 @@ class CidadeDAO extends Cidade{
         $postgres->criaConexao();
         $consulta = $postgres->getConexao()->query($sql);
         $consulta = $consulta->fetchAll();
+        $postgres->desconectar();
         return $consulta;
     }
 
