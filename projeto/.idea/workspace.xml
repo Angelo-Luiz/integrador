@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a87bd4a-4d38-4e44-9e4f-490e19b89daa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/cadastroUniversidadeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAO/UsuarioDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/CadastroUsuario.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/cadastroUsuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/loginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/AlunoDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/AlunoDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/CidadeDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/CidadeDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAO/UniversidadeDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAO/UniversidadeDAO.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/CadastroUniversidade.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/CadastroUniversidade.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/cadastroUniversidade.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/cadastroUniversidade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/topo.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/topo.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/View/cadastro/cadastroAluno.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2RQPhUxRRuNVvqeC3QHwg7yMU5f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SQL Dialects&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/View" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a87bd4a-4d38-4e44-9e4f-490e19b89daa" name="Changes" comment="" />
+      <created>1687179452863</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687179452863</updated>
+      <workItem from="1687179454376" duration="94000" />
+      <workItem from="1687182315619" duration="10907000" />
+      <workItem from="1687265702438" duration="21300000" />
+      <workItem from="1687346942546" duration="13558000" />
+      <workItem from="1687441707677" duration="9456000" />
+      <workItem from="1687526097911" duration="11444000" />
+      <workItem from="1687606668373" duration="8996000" />
+      <workItem from="1687785588066" duration="614000" />
+      <workItem from="1687788798396" duration="15030000" />
+      <workItem from="1687869146066" duration="2915000" />
+      <workItem from="1687883129331" duration="8715000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
